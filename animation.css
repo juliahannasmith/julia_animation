@@ -1,29 +1,40 @@
-@keyframes aniamtion1 {
+@keyframes flower {
     0% {
         left: 0px;
         top: 0px;
     }
     25% {
         left: 200px;
-        top: 0px;
+        top: 100px;
+
     }
     50% {
         left: 200px;
-        top: 200px;
+        top: 20px;
     }
     75% {
+        left: 100px;
+        top: 200px;
+    }
+    80% {
         left: 0px;
         top: 200px;
     }
-    100% {
+    100%{
         left: 0px;
         top: 0px;
     }
 }
 
+body{
+    background-color: white;
+}
 
 #flower {
-    animation-name: animatoin1
-
-
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: flower;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
