@@ -1,40 +1,89 @@
 @keyframes flower {
     0% {
         left: 0px;
-        top: 0px;
-    }
-    25% {
-        left: 200px;
-        top: 100px;
-
+        top: 180px;
+        opacity: 1;
     }
     50% {
-        left: 200px;
-        top: 20px;
+        opacity: 0;
     }
-    75% {
-        left: 100px;
-        top: 200px;
-    }
-    80% {
-        left: 0px;
-        top: 200px;
-    }
-    100%{
-        left: 0px;
-        top: 0px;
+    100% {
+        left: 500px;
+        top: 180px;
+        opacity: 1;
+
     }
 }
 
-body{
-    background-color: white;
+@keyframes flower2 {
+    0% {
+        left: 500px;
+        top: 180px;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        left: 0px;
+        top: 180px;
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 40px;
+        left: 345px;
+    }
+    50% {
+        top: 25px;
+        left: 345px;
+    }
+    100% {
+        top: 40px;
+        left: 345px;
+    }
 }
 
 #flower {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    animation-name: flower;
-    animation-duration: 5s;
+    position: absolute;
+    animation-duration: 8s;
+    animation-name: flower, spin;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
+}
+
+#flower2 {
+    position: absolute;
+    animation-duration: 8s;
+    animation-name: flower2, spin;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+#bee {
+    top: 50px;
+    left: 80px;
+    position: absolute;
+    transform-origin: 0% 15%;
+    animation: 2s spin infinite linear;
+
+}
+
+#goat {
+    top: 40px;
+    left: 345px;
+    position: absolute;
+    animation-name: jump;
+    animation-duration: 1.25s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
 }
