@@ -19,3 +19,13 @@ function frame() {
         lamb.style.left = xpos2 + 'px';
     }
 }
+
+window.addEventListener("keydown", changeThingColor);
+
+function changeThingColor(event) {
+    if (event.key === "arrowLeft"){
+        bunny.style.background = "blue";
+    } else {
+        thing.style.background = "green";
+    }
+}

@@ -67,7 +67,6 @@
     animation-iteration-count: infinite;
 }
 
-
 #bee {
     top: 50px;
     left: 80px;
@@ -75,6 +74,10 @@
     transform-origin: 0% 15%;
     animation: 2s spin infinite linear;
 
+}
+
+#bee:hover {
+    animation: 2s infinite linear;
 }
 
 #goat {
@@ -86,6 +89,10 @@
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
+}
+
+#goat:active {
+    filter: invert(1)
 }
 
 #bunny {
