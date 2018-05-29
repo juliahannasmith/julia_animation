@@ -1,14 +1,21 @@
 var bunny = document.getElementById("bunny");
-var xpos = 5;
-var ypos = 175;
+var xpos1 = 5;
+var lamb = document.getElementById("lamb");
+var xpos2 = 580;
 var id = setInterval(frame, 5);
 
 function frame() {
-    if (xpos == 580) {
+    if (xpos1 == 580) {
         clearInterval(id);
-        bunny.style.transform = scaleX(1);
     } else {
-        xpos++;
-        bunny.style.left = xpos + 'px';
+        xpos1++;
+        bunny.style.left = xpos1 + 'px';
+    }
+
+    if (xpos2 == 0) {
+        clearInterval(id);
+    } else {
+        xpos2--;
+        lamb.style.left = xpos2 + 'px';
     }
 }
