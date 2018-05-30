@@ -51,6 +51,12 @@
     }
 }
 
+#container{
+    height: 260px;
+    width: 620px;
+    position: absolute;
+}
+
 #flower {
     position: absolute;
     animation-duration: 8s;
@@ -106,4 +112,17 @@
     left: 580px;
     top: 175px;
     position: absolute;
+}
+
+#meatball{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    transition: transition: transform .2s, background .5s, left .5s ease-out, top .5s ease-out;
+}
+
+#olaf{
+    position: absolute;
+    top: 165px;
+    left: 280px;
 }
