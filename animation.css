@@ -120,9 +120,3 @@
     top: 1px;
     transition: transition: transform .2s, background .5s, left .5s ease-out, top .5s ease-out;
 }
-
-#olaf{
-    position: absolute;
-    top: 165px;
-    left: 280px;
-}
