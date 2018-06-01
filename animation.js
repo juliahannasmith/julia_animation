@@ -24,22 +24,3 @@ function frame() {
         lamb.style.left = xpos2 + 'px';
     }
 }
-
-container.addEventListener("click", moveThing);
-
-function moveThing(event) {
-    var xPosition = event.clientX -25;
-	var yPosition = event.clientY -25;
-	meatball.style.left = xPosition + "px";
-	meatball.style.top = yPosition + "px";
-}
-
-function changeThingColor(event) {
-    if (event.key === "b"){
-        olaf.style.background = "blue";
-    } else if (event.key === "o") {
-        olaf.style.background = "orange";
-    } else {
-        olaf.style.background = "green";
-    }
-}
